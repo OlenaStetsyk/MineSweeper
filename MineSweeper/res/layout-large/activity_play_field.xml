@@ -1,0 +1,89 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    
+    tools:context=".PlayField" 
+    android:background="@drawable/b"
+    >
+	
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="70dp"
+         	 >
+
+            <ToggleButton
+                android:id="@+id/image_smile"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:textOn=" "
+                android:textOff=" "
+				android:layout_centerHorizontal="true"
+                 />
+         <Chronometer
+                android:id="@+id/chronometer1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:background="#FFFFFF"
+                 />
+
+         <TextView
+             android:id="@+id/bomb_count"
+             android:layout_width="50dp"
+             android:layout_height="wrap_content"
+             android:layout_alignBaseline="@+id/image_smile"
+             android:layout_alignBottom="@+id/image_smile"
+             android:layout_alignParentLeft="true"
+             android:layout_marginLeft="19dp"
+             android:background="#FFFFFF"
+             android:textStyle="bold|italic"
+        	 android:textSize="24sp"
+             android:gravity="center_vertical|center_horizontal"
+             android:drawableLeft="@drawable/mini_bomb"
+             android:text="Text" />
+
+        </RelativeLayout>
+
+        <TableLayout
+            android:id="@+id/table1"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           
+            >
+
+            
+        </TableLayout>
+        
+         <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical" >
+
+          
+            <Button
+                android:id="@+id/b1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_background"
+                android:textColor="#CDCDCD"
+            	android:textSize="20sp"
+                android:layout_centerHorizontal="true"
+                android:text="@string/records"
+                 />
+
+        </RelativeLayout>
+        
+    </LinearLayout>
+
+</RelativeLayout>
